@@ -6,7 +6,7 @@ class Bankaccount:
 
     def Deposit(self, amount):
         self.balance += amount
-        print(f"Account has been credit of ${amount} ")
+        print(f"${amount} has been credited:  ")
         print(f"Current account balance is: ${self.balance}\n")
         return self.balance
 
@@ -18,8 +18,8 @@ class Bankaccount:
 
     def BalanceInquiry(self):
         print("-=-=-=-= BALANCE INQUIRY =-=-=-")
-        print(f"Account name: {self.name}")
-        print(f"Account no: {self.accNumber}")
+        print(f"Account Name: {self.name}")
+        print(f"Account Number: {self.accNumber}")
         print(f"Account Balance: ${self.balance}", "\n")
 
 user = Bankaccount("Divyesh", 78965565, 300000)
